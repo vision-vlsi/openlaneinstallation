@@ -1,5 +1,8 @@
 ##Magic Installation
-cd 
+cd
+cd /var/lib/dpkg/
+sudo rm lock lock-frontend
+cd
 sudo apt-get install m4 --assume-yes
 sudo apt-get install tcsh --assume-yes
 sudo apt-get install csh --assume-yes
