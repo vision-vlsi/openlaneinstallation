@@ -1,23 +1,23 @@
 echo
 echo
 echo
-echo "            **************************************         "
-echo "             WelCome to Opensource Installation            "
-echo "                   Installation script                     "
+echo "************************************************************************************************"
+echo "                            WelCome to Opensource Installation                                  "
+echo "                                   Installation script                                          "
 echo
-echo "                         By                                "
+echo "                                          By                                                    "
 echo
-echo "                 Vision-VLSI Pvt. Ltd.                     "
-echo "              We offer Training in VLSI Domain             "
+echo "                                    Vision-VLSI Pvt. Ltd.                                       "
+echo "                              We offer Training in VLSI Domain                                  "
 echo
-echo "                Contact at +919949426362                   "
-echo "            **************************************         "
+echo "                                   Contact at +919949426362                                     "
+echo "************************************************************************************************"
 echo
 echo
 echo
-echo "           **************************************          "
-echo "                Installation Begins                        "
-echo "           **************************************          "
+echo "************************************************************************************************"
+echo "                                     Installation Begins                                        "
+echo "************************************************************************************************"
 echo
 echo
 echo
@@ -28,7 +28,7 @@ sudo rm lock lock-frontend
 cd
 echo
 echo
-echo "Installing Magic dependancies"
+echo "*********************************  Installing Magic dependancies   ******************************************"
 echo
 echo
 sudo apt-get install m4 --assume-yes
@@ -43,7 +43,7 @@ sudo apt-get install libncurses-dev --assume-yes
 cd 
 echo
 echo
-echo "Cloning magic and will start installation of magic"
+echo "**********************************Cloning magic and will start installation of magic******************************"
 echo
 echo
 git clone https://github.com/RTimothyEdwards/magic.git
@@ -55,7 +55,7 @@ cd
 echo
 echo
 ##yosys – Yosys Open SYnthesis Suite - Installation
-echo "Installing yosys dependancies"
+echo "****************************************  Installing yosys dependancies   *********************************************"
 echo
 echo
 sudo apt-get install build-essential clang bison flex \
@@ -66,7 +66,7 @@ sudo apt-get install build-essential clang bison flex \
 cd
 echo
 echo
-echo "       Cloning yosys and will start installation of yosys      "
+echo "************************************** Cloning yosys and will start installation of yosys ********************************"
 echo
 echo
 git clone https://github.com/YosysHQ/yosys.git
@@ -79,7 +79,7 @@ sudo make install
 cd 
 echo
 echo
-echo "                     Installing Docker                        "
+echo "************************************************  Installing Docker  ************************************************"
 echo
 echo
 sudo apt-get remove docker docker-engine docker.io containerd runc --assume-yes
@@ -101,7 +101,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io --assume-yes
 cd 
 echo
 echo
-echo "           Cloning OpenLane and will start installation of openlane             "
+echo "************************************* Cloning OpenLane and will start installation of openlane  ****************************************"
 echo
 echo
 git clone https://github.com/The-OpenROAD-Project/OpenLane.git
@@ -117,7 +117,7 @@ sudo make test # This is to test that the flow and the pdk were properly install
 cd 
 echo
 echo
-echo "               Cloning OpenSTA and will start installation of OpenSTA             "
+echo "********************************************* Cloning OpenSTA and will start installation of OpenSTA *********************************"
 echo
 echo
 git clone https://github.com/The-OpenROAD-Project/OpenSTA.git
@@ -134,20 +134,20 @@ cd
 echo
 echo
 ##Install Icarus iverilog
-echo "                                  Installing iverilog                     "
+echo "***********************************************  Installing iverilog *****************************************************"
 echo
 echo
 sudo apt-get install -y iverilog --assume-yes
-echo "                                  Installing gtkwave                     "
+echo "************************************************ Installing gtkwave ******************************************************"
 echo
 echo
 sudo apt install gtkwave --assume-yes
-echo "                                  Installing klayout                     "
+echo "************************************************ Installing klayout ******************************************************"
 echo
 echo
 sudo apt install klayout --assume-yes
 echo
-echo "                     **************************************             "
-echo "                             Installation Completed                     "
-echo "                     **************************************             "
+echo "**************************************************************************************"
+echo "                             Installation Completed                                   "
+echo "**************************************************************************************"
 echo
