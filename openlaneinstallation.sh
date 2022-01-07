@@ -30,6 +30,7 @@ echo
 echo "*********************************  Installing Magic dependancies   ********************************"
 echo
 echo
+sudo apt-get update
 sudo apt-get install m4 --assume-yes
 sudo apt-get install tcsh --assume-yes
 sudo apt-get install csh --assume-yes
